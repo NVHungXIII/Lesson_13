@@ -46,7 +46,6 @@ ul {
 .left {
     width: 20%;
     background-color: rgb(203, 235, 235);
-    display: block;
 }
 
 .content {
@@ -70,8 +69,12 @@ footer {
 }
 
 @media only screen and (max-width: 500px){
-    div {
-        height: 100px
+    .left, .right {
+        height: 100px;
+        width: 100%;
+        clear: both;
+    }
+    .content {
         width: 100%;
         clear: both;
     }
