@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+header {
+    background-color: tomato;
+    height: 100px;
+    position: relative;
+    display: block;
+}
+
+nav {
+    position:absolute;
+    margin: 20px;
+    display: block;
+
+}
+
+ul li {
+    display: inline;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.left, .content, .right {
+    float: left;
+    height: 500px;
+    display: block;
+}
+
+.left {
+    width: 20%;
+    background-color: rgb(203, 235, 235);
+    display: block;
+}
+
+.content {
+    padding: 20px;
+    width: 60%;
+    background-color: thistle;
+    display: block;
+}
+
+.right {
+    width: 20%;
+    background-color: wheat;
+    display: block;
+}
+
+footer {
+    background-color: rgb(100, 131, 37);
+    height: 100px;
+    display: block;
+    clear: both;
+}
+
+@media only screen and (max-width: 500px){
+    div {
+        height: 100px
+        width: 100%;
+        clear: both;
+    }
+}
